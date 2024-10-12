@@ -6,11 +6,12 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
 
+// Data model
 @Entity
 @Parcelize
 data class Note(
     @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "id")
+    @ColumnInfo(name = "id") // nama column dari tabel
     var id: Int = 0,
 
     @ColumnInfo(name = "title")

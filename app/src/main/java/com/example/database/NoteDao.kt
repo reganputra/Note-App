@@ -8,7 +8,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
 
-@Dao
+@Dao //  untuk melakukan aksi CRUD
 interface NoteDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(note: Note)

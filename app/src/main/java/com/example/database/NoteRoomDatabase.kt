@@ -21,7 +21,7 @@ abstract class NoteRoomDatabase: RoomDatabase() {
             if (INSTANCE == null){
                 synchronized(NoteRoomDatabase::class.java){
                     INSTANCE = Room.databaseBuilder(context.applicationContext,
-                        NoteRoomDatabase::class.java, "note_database")
+                        NoteRoomDatabase::class.java, "note_database")//membuat atau membangun database pada aplikasi dengan nama note_database
                         .build()
                 }
             }
