@@ -73,7 +73,7 @@ class NoteAddUpdateActivity : AppCompatActivity() {
 
         }
 
-        // menghapus item dari database
+        // menampilkan dialog konfirmasi saat pengguna menekan tombol back
         onBackPressedDispatcher.addCallback(this, object: OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 showAlertDialog(ALERT_DIALOG_CLOSE)
